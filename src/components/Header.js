@@ -7,7 +7,7 @@ const Header = ({ title, onAdd, showAdd }) => {
     return (
         <header className='header'>
             <h1>{title}</h1>
-            {location.pathname === '/' && <Button color={showAdd ? 'green' : 'red'} text={showAdd ? 'Add' : 'Close'} onClick={onAdd} />}
+            {location.pathname === '/react-portfolio' && <Button color={showAdd ? 'green' : 'red'} text={showAdd ? 'Add' : 'Close'} onClick={onAdd} />}
         </header>
     )
 }

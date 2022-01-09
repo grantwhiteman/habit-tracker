@@ -91,7 +91,7 @@ function App() {
       <div className="container">
         <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={!showAddTask} title={title} />
         <Routes>
-          <Route path='/' element = {
+          <Route path='/react-portfolio' element = {
               <>
                 {showAddTask && <AddTask onAdd={addTask} />}
                 {tasks.length > 0 ? (
@@ -102,7 +102,7 @@ function App() {
               </>
             } 
           />
-          <Route path='/about' element={<About />} />          
+          <Route path='/react-portfolio/about' element={<About />} />          
         </Routes>
         <Footer />
       </div>

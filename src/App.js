@@ -91,7 +91,7 @@ function App() {
       <div className="container">
         <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={!showAddTask} title={title} />
         <Routes>
-          <Route path='/react-portfolio' element = {
+          <Route path='/react-portfolio/' element = {
               <>
                 {showAddTask && <AddTask onAdd={addTask} />}
                 {tasks.length > 0 ? (
